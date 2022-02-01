@@ -1,5 +1,5 @@
 <?php
-$edad= rand(1,103);
+$edad= rand(1,100);
 if ($edad>=18) {
     echo "la edad es: $edad";
     echo "<br>";
