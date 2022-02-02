@@ -4,8 +4,10 @@ if ($edad>=18) {
     echo "la edad es: $edad";
     echo "<br>";
     echo "Usted es mayor de edad";
+
 }else{
     echo "la edad es: $edad";
     echo "<br>";
-    echo "usted es manor de edad";
+    echo "usted es menor de edad";
 }
+

@@ -18,17 +18,26 @@
         <input type="submit" value="calcular">
 
         <!---
-            $apresente = $_POST['apresente'];
-            $anacimiento = $_POST['anacimiento'];
+            
+
+            $apresente = $_REQUEST['apresente'];
+            $anacimiento = $_REQUEST['anacimiento'];
         -->
         <?php
-        $apresente = $_REQUEST['apresente'];
-        $anacimiento = $_REQUEST['anacimiento'];
+        $apresente = $_POST['apresente'];
+        $anacimiento = $_POST['anacimiento'];
 
         $Edad = $apresente - $anacimiento;
-
-        echo "Su edad es $Edad años";
-
+        /*
+            Alert con JavaScript en PHP
+            echo "<script>alert('same message');</script>";
+        */
+        if($Edad>18){
+            echo "<script language='javascript'>alert('Es mayor de edad, Su edad es: $Edad año(s)')</script>";
+        }else{
+            echo "<script language='javascript'>alert('Es menor de edad, Su edad es: $Edad año(s)')</script>";
+        }
+        
         ?>
 
     </form>
