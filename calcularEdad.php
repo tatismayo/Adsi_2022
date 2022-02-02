@@ -18,7 +18,8 @@
         <input type="submit" value="calcular">
 
         <!---
-    
+            $apresente = $_POST['apresente'];
+            $anacimiento = $_POST['anacimiento'];
         -->
         <?php
         $apresente = $_REQUEST['apresente'];
